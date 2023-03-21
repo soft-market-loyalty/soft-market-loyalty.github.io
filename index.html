@@ -24,6 +24,8 @@
 	<link rel="stylesheet" type="text/css" href="css/responsive.css" media="screen" />
 	<link rel="stylesheet" type="text/css" href="css/animate.css" media="screen" />
 	<link rel="stylesheet" type="text/css" href="css/slider.css">
+	<!--  пересылка почты  -->
+	<link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
 	
 </head>
 
@@ -538,9 +540,9 @@
 
 				<div class="row mt50">
 					<div class="col-md-7 col-sm-7">
-						<form id="contact-form" action="#">
+						<form id="contact-form" action="https://send.pageclip.co/zNt32Q1EVSRBbUfYBjvC6swxuEIlXRCs" class="pageclip-form" method="post">
 							<input name="name" id="name" type="text" class="form-control" placeholder="Имя*">
-							<input name="mail" id="mail" type="email" class="form-control" placeholder="E-mail*">	
+							<input name="email" id="mail" type="email" class="form-control" placeholder="E-mail*">	
 							<input name="subject" id="subject" type="text" class="form-control" placeholder="Тема">	
 							<textarea name="comment" id="comment" class="form-control" placeholder="Сообщение"></textarea>
 		  					<input type="submit" value="Отправить" id="submit-message">
@@ -691,7 +693,9 @@
         return false;
     });
     	
-    </script> 
+    </script>
+	<!--  скрипт пересылки почты -->
+	<script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
 </body>
 
 </html>
